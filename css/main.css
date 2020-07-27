@@ -150,6 +150,11 @@ h2 ~ p {
   color: #fff;
 }
 
+/* MOBILE MENU */
+.mobile-menu-check,
+.show-mobile-menu {
+  display: none;
+}
 /* DROPDOWN STYLES */
 .dropdown {
   position: relative;
@@ -605,6 +610,23 @@ home-section h4 {
   }
   .header-logo {
     left: auto;
+  }
+  /* MOBILE MENU */
+  .show-mobile-menu {
+    display: block;
+    float: right;
+    padding: 1.5em;
+    position: relative;
+    margin-top: 1.5vh;
+  }
+  .header-nav {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .mobile-menu-check:checked ~ .header-nav {
+    max-height: 1000px;
   }
 
   /* HOME STYLES */
